@@ -14,8 +14,7 @@ end
 def run_guessing_game
   #loop do
     prompt_user
-    guess = get_user_input
-    guess.strip!
+    guess = get_user_input.chomp
     correct_number = generate_number
     if guess == 'exit' 
       puts "Goodbye!"
