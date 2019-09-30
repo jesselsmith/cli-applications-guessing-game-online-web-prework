@@ -19,7 +19,7 @@ def run_guessing_game
     correct_number = generate_number
     if guess == 'exit' 
       puts "Goodbye!"
-      break
+      #break
     elsif guess.to_i == correct_number
       puts "You guessed the correct number!"
     else
