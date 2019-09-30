@@ -17,9 +17,15 @@ end
 
 
 def run_guessing_game
+  whil
   prompt_user
   guess = get_user_input
+  guess.strip!
   correct_number = generate_number
-  if is_winner? (guess, correct_number)
-    puts ""
+  if guess == 'exit' 
+    puts "Goodbye!"
+    break
+  elsif is_winner? (guess, correct_number)
+    puts "You guessed the correct number!"
+  
 end
