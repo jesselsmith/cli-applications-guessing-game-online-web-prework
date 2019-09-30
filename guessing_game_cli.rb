@@ -12,7 +12,7 @@ def get_user_input
 end
 
 def run_guessing_game
-  loop do
+  #loop do
     prompt_user
     guess = get_user_input
     guess.strip!
