@@ -4,7 +4,7 @@ def prompt_user
 end
 
 def generate_number
-  rand(1..6)
+  rand(5) + 1
 end
 
 def get_user_input
