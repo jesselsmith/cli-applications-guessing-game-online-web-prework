@@ -11,11 +11,6 @@ def get_user_input
   gets
 end
 
-def is_winner? (guess, correct_number)
-  guess == correct_number
-end
-
-
 def run_guessing_game
   loop do
     prompt_user
@@ -25,7 +20,7 @@ def run_guessing_game
     if guess == 'exit' 
       puts "Goodbye!"
       break
-    elsif is_winner? (guess, correct_number)
+    elsif guess == correct_number
       puts "You guessed the correct number!"
     else
       puts "Sorry, the computer guessed #{correct_number}"
